@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bites Old School Café</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-cream-100 font-sans">
+
+    <!-- Header & Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold font-serif text-brown-800">
+                <img src="assets/Old School Logo with Yellow BG.svg" alt="Brew & Bites Old School Logo" class="h-12">
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-brown-800">Home</a>
+                <a href="#about" class="nav-link text-brown-800">About</a>
+                <a href="#menu" class="nav-link text-brown-800">Menu</a>
+                <a href="#contact" class="nav-link text-brown-800">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-brown-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white bg-opacity-90">
+            <a href="#home" class="block py-2 px-4 text-sm nav-link">Home</a>
+            <a href="#about" class="block py-2 px-4 text-sm nav-link">About</a>
+            <a href="#menu" class="block py-2 px-4 text-sm nav-link">Menu</a>
+            <a href="#contact" class="block py-2 px-4 text-sm nav-link">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen overflow-hidden">
+        <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop>
+            <source src="assets/bg.mp4">
+            Your browser does not support video.
+        </video>
+        <div class="relative container mx-auto px-6 flex flex-col items-center justify-center h-full text-white">
+             <h4 class="text-2xl md:text-3xl font-serif font-bold mb-2" data-aos="fade-down">Brew & Bites</h4>
+             <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4" data-aos="fade-up">Old School</h1>
+             <p class="text-xl md:text-2xl font-light mb-6" data-aos="fade-up" data-aos-delay="200">Dine. Read. Play. Gossip.</p>
+             <a href="#contact" class="bg-yellow-900 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-yellow-800 transition duration-300" data-aos="fade-up" data-aos-delay="400">Visit Us</a>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-serif text-brown-800">Our Story</h2>
+                <p class="text-lg text-gray-600 mt-2">A cozy corner for coffee lovers</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <img src="assets/interior-1.webp" alt="About Brew & Bites" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Welcome to Brew & Bites, your cozy corner in Sikar, Rajasthan. We are an old-school themed café where you can enjoy delicious food, read your favorite books, play board games, and have heart-to-heart conversations.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our goal is to provide a warm and welcoming atmosphere for everyone to relax and make memories.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-brown-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-serif text-brown-800">Our Menu</h2>
+                <p class="text-lg text-gray-600 mt-2">A taste of perfection</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in">
+                    <a href="javascript:void(0)" class="zoomable" data-img-src="assets/Food Menu/Front.png">
+                        <img src="assets/Food Menu/Front.png" alt="Menu Page 1" class="w-full h-full object-cover">
+                    </a>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in">
+                    <a href="javascript:void(0)" class="zoomable" data-img-src="assets/Food Menu/Brew.png">
+                        <img src="assets/Food Menu/Brew.png" alt="Menu Page 2" class="w-full h-full object-cover">
+                    </a>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in">
+                    <a href="javascript:void(0)" class="zoomable" data-img-src="assets/Food Menu/Frap-dae.png">
+                        <img src="assets/Food Menu/Frap-dae.png" alt="Menu Page 3" class="w-full h-full object-cover">
+                    </a>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in">
+                    <a href="javascript:void(0)" class="zoomable" data-img-src="assets/Food Menu/Shakes.png">
+                        <img src="assets/Food Menu/Shakes.png" alt="Menu Page 4" class="w-full h-full object-cover">
+                    </a>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in">
+                    <a href="javascript:void(0)" class="zoomable" data-img-src="assets/Food Menu/Chill.png">
+                        <img src="assets/Food Menu/Chill.png" alt="Menu Page 5" class="w-full h-full object-cover">
+                    </a>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in">
+                    <a href="javascript:void(0)" class="zoomable" data-img-src="assets/Food Menu/Little Bites.png">
+                        <img src="assets/Food Menu/Little Bites.png" alt="Menu Page 6" class="w-full h-full object-cover">
+                    </a>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in">
+                    <a href="javascript:void(0)" class="zoomable" data-img-src="assets/Food Menu/Little Bites (2).png">
+                        <img src="assets/Food Menu/Little Bites (2).png" alt="Menu Page 7" class="w-full h-full object-cover">
+                    </a>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in">
+                    <a href="javascript:void(0)" class="zoomable" data-img-src="assets/Food Menu/Big Bites.png">
+                        <img src="assets/Food Menu/Big Bites.png" alt="Menu Page 8" class="w-full h-full object-cover">
+                    </a>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in">
+                    <a href="javascript:void(0)" class="zoomable" data-img-src="assets/Food Menu/9.png">
+                        <img src="assets/Food Menu/9.png" alt="Menu Page 9" class="w-full h-full object-cover">
+                    </a>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in">
+                    <a href="javascript:void(0)" class="zoomable" data-img-src="assets/Food Menu/10.png">
+                        <img src="assets/Food Menu/10.png" alt="Menu Page 10" class="w-full h-full object-cover">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Menu Section -->
+
+    <!-- Instagram Section -->
+    <section id="instagram" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-serif text-brown-800">Follow Our Journey</h2>
+                <a href="https://www.instagram.com/bboldschool" target="_blank" rel="noopener" class="text-lg text-yellow-600 hover:underline mt-2">@bboldschool</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+                <blockquote class="instagram-media instagram-embed" data-instgrm-permalink="https://www.instagram.com/reel/DLKnUGNtZyc/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+                <blockquote class="instagram-media instagram-embed" data-instgrm-permalink="https://www.instagram.com/reel/DNYaUjVzGGi/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+                <blockquote class="instagram-media instagram-embed" data-instgrm-permalink="https://www.instagram.com/reel/DMt-s_Xzjkr/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+                <blockquote class="instagram-media instagram-embed" data-instgrm-permalink="https://www.instagram.com/reel/DMSzggYIbGy/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+                <blockquote class="instagram-media instagram-embed" data-instgrm-permalink="https://www.instagram.com/reel/DMiIh9SIO-Q/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+                <blockquote class="instagram-media instagram-embed" data-instgrm-permalink="https://www.instagram.com/reel/DLJeLG5zIvy/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-serif text-brown-800">Gallery</h2>
+                <p class="text-lg text-gray-600 mt-2">Our Moments Captured</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="javascript:void(0)" class="zoomable" data-img-src="assets/gallary/book.webp">
+                    <img src="assets/gallary/book.webp" loading="lazy" alt="Gallery Image 1" class="object-cover w-full h-56 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                </a>
+                <a href="javascript:void(0)" class="zoomable" data-img-src="assets/gallary/coffee.jpg">
+                    <img src="assets/gallary/coffee.jpg" loading="lazy" alt="Gallery Image 2" class="object-cover w-full h-56 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                </a>
+                <a href="javascript:void(0)" class="zoomable" data-img-src="assets/gallary/exterior.jpg">
+                    <img src="assets/gallary/exterior.jpg" loading="lazy" alt="Gallery Image 3" class="object-cover w-full h-56 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                </a>
+                <a href="javascript:void(0)" class="zoomable" data-img-src="assets/gallary/friends.webp">
+                    <img src="assets/gallary/friends.webp" loading="lazy" alt="Gallery Image 4" class="object-cover w-full h-56 rounded-lg" data-aos="fade-up" data-aos-delay="400">
+                </a>
+                <a href="javascript:void(0)" class="zoomable" data-img-src="assets/gallary/garlicbread.webp">
+                    <img src="assets/gallary/garlicbread.webp" loading="lazy" alt="Gallery Image 5" class="object-cover w-full h-56 rounded-lg" data-aos="fade-up" data-aos-delay="500">
+                </a>
+                <a href="javascript:void(0)" class="zoomable" data-img-src="assets/gallary/interior-2.webp">
+                    <img src="assets/gallary/interior-2.webp" loading="lazy" alt="Gallery Image 6" class="object-cover w-full h-56 rounded-lg" data-aos="fade-up" data-aos-delay="600">
+                </a>
+                <a href="javascript:void(0)" class="zoomable" data-img-src="assets/gallary/shakes.webp">
+                    <img src="assets/gallary/shakes.webp" loading="lazy" alt="Gallery Image 7" class="object-cover w-full h-56 rounded-lg" data-aos="fade-up" data-aos-delay="700">
+                </a>
+                <a href="javascript:void(0)" class="zoomable" data-img-src="assets/gallary/sundae.webp">
+                    <img src="assets/gallary/sundae.webp" loading="lazy" alt="Gallery Image 8" class="object-cover w-full h-56 rounded-lg" data-aos="fade-up" data-aos-delay="800">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Gallery Section -->
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 hidden z-50">
+        <button id="lightbox-close" class="absolute top-5 right-5 text-white text-3xl">&times;</button>
+        <button id="lightbox-prev" class="absolute left-5 text-white text-3xl">&#10094;</button>
+        <img id="lightbox-image" class="max-w-full max-h-full" src="" alt="Zoomed Image">
+        <button id="lightbox-next" class="absolute right-5 text-white text-3xl">&#10095;</button>
+    </div>
+    <!-- End Modal Lightbox -->
+
+    <!-- Inline Script for Lightbox functionality -->
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const zoomables = document.querySelectorAll('.zoomable');
+    const modal = document.getElementById('lightbox-modal');
+    const modalImg = document.getElementById('lightbox-image');
+    const closeBtn = document.getElementById('lightbox-close');
+    const prevBtn = document.getElementById('lightbox-prev');
+    const nextBtn = document.getElementById('lightbox-next');
+    let images = [];
+    zoomables.forEach((el, index) => { 
+        images.push(el.getAttribute('data-img-src'));
+        el.setAttribute('data-index', index);
+        el.addEventListener('click', function() {
+            let idx = parseInt(this.getAttribute('data-index'));
+            showModal(idx);
+        });
+    });
+    function showModal(index) {
+        modal.classList.remove('hidden');
+        modalImg.src = images[index];
+        modalImg.setAttribute('data-index', index);
+    }
+    closeBtn.addEventListener('click', function() {
+        modal.classList.add('hidden');
+    });
+    prevBtn.addEventListener('click', function() {
+        let idx = parseInt(modalImg.getAttribute('data-index')) || 0;
+        idx = (idx - 1 + images.length) % images.length;
+        showModal(idx);
+    });
+    nextBtn.addEventListener('click', function() {
+        let idx = parseInt(modalImg.getAttribute('data-index')) || 0;
+        idx = (idx + 1) % images.length;
+        showModal(idx);
+    });
+    // Close modal when clicking outside the image
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.classList.add('hidden');
+        }
+    });
+});
+</script>
+
+    <!-- Contact & Location Section -->
+    <section id="contact" class="py-20 bg-brown-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-serif text-brown-800">Get In Touch</h2>
+                <p class="text-lg text-gray-600 mt-2">We'd love to hear from you</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold text-brown-800 mb-4">Visit Us</h3>
+                    <p class="text-gray-700 mb-2">Rani Sati Rd, in front of Murli Plaza, Tilak Nagar, Sikar, Rajasthan 332001</p>
+                    <p class="text-gray-700 mb-2"><strong>Phone:</strong> <a href="tel:+919509028608">+91 9509028608</a></p>
+                    <!-- <p class="text-gray-700 mb-4"><strong>Email:</strong> contact@bboldschool.com</p> -->
+                    <a href="https://maps.app.goo.gl/5n4UEb5yYnhHzJH77?g_st=ipc" target="_blank" rel="noopener" class="inline-block bg-yellow-900 text-white px-6 py-2 rounded-full hover:bg-yellow-800 transition duration-300">
+                        Find Us on Google Maps
+                    </a>
+                </div>
+                <div class="md:w-1/2 h-80 rounded-lg overflow-hidden shadow-xl" data-aos="fade-left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.7562680186743!2d75.1438367!3d27.6010851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396ca54fb2f48859%3A0x67623a30da2a528!2sOld%20School!5e0!3m2!1sen!2sin!4v1755632763306!5m2!1sen!2sin"
+                        width="100%"
+                        height="100%"
+                        class="map-iframe"
+                        title="Google Maps"
+                        allowfullscreen=""
+                        style="border: 0;"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brown-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Brew & Bites Old School Café. All Rights Reserved.</p>
+            <p class="text-sm text-cream-200 mt-2">Designed with ❤️</p>
+        </div>
+    </footer>
+
+    <!-- Fixed Logo at bottom right -->
+    <div class="fixed bottom-0 right-0 p-4">
+        <img src="assets/Old School Logo.svg" alt="Old School Logo" class="md-h-32 md:w-32 h-32 w-32 rounded-full shadow-lg transition-transform transform hover:scale-110">
+    </div>
+
+    <script async src="https://www.instagram.com/embed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

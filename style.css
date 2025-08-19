@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.bg-cream-100 { --tw-bg-opacity: 1; background-color: rgba(255, 251, 242, var(--tw-bg-opacity)); }
+.bg-brown-50 { --tw-bg-opacity: 1; background-color: rgba(249, 245, 240, var(--tw-bg-opacity)); }
+.text-brown-800 { --tw-text-opacity: 1; color: rgba(120, 84, 62, var(--tw-text-opacity)); }
+.nav-link {
+    @apply text-gray-700 hover:text-yellow-600 transition-colors duration-300 pb-1 border-b-2 border-transparent hover:border-yellow-600;
+}
+
+#navbar.scrolled {
+    @apply bg-white bg-opacity-95 shadow-lg;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
